@@ -10,18 +10,26 @@
 #endif  /* __cplusplus */
 
 #if HAVE_CONFIG_H
-# include <proj_name/config.h>
+# include <config.h>
 #endif
 
 #include <stdio.h>
 #include <sys/types.h>
+
+#if HAVE_STRINGS_H
+#include <strings.h>
+#endif
+
+#if HAVE_STDLIB_H
+#include <stdlib.h>
+#endif
 
 #if HAVE_UNISTD_H
 # include <unistd.h>
 #endif
 
 #if HAVE_ERRNO_H
-# include <erro.h>
+# include <errno.h>
 #endif
 
 #ifndef errno

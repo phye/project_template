@@ -1,5 +1,5 @@
 #if HAVE_CONFIG_H
-#   include <proj_name/config.h>
+#   include <config.h>
 #endif
 
 #include <proj_name/common.h>

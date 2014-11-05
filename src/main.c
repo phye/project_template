@@ -3,7 +3,7 @@
 
 int main (void) 
 {
-    int pter = (int*) xmalloc(sizeof(int));
+    int* pter = (int*) xmalloc(sizeof(int));
     *pter = 0xabcd1234;
     printf("%x\n", *pter);
     free(pter);
