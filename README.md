@@ -20,8 +20,9 @@ All directories contained are stated below:
        Read by automake and autoconf (mainly) to generate configure
    * *doc* :
        Documents
-   * *include* :
-       All headers
+   * *proj_name* :
+       Directory to store all headers, all these headers should be installed to dst dir like
+       /usr/include/proj_name
    * *lib* :
        For common util sources, such as error handling
    * *src* :
@@ -38,6 +39,7 @@ All directories contained are stated below:
 
 An example directy layout:
 
-        admin@phye-s11-arch:phye$ls
-        autogen.sh  configure.ac  include/  Makefile.am  src/         ut/
-        config/     doc/          lib/      README.md    thirdparty/
+        admin@phye-s11-arch:proj_name$ls -F
+        autogen.sh  configure.ac  Makefile.am  README.md  thirdparty/
+        config/     doc/          lib/      proj_name/   src/       ut/
+
